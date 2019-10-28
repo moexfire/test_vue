@@ -46,6 +46,16 @@ const router = new VueRouter({
 })
 
 
-new Vue({
-    router
+var vue = new Vue({
+    router,
+    el: '#app',
+    data: {
+        list_vue: [
+            { materi: "Event" },
+            { materi: "Model Binding" },
+            { materi: "Render List" },
+            { materi: "Component" },
+        ]
+    }
+
 }).$mount('#app')
